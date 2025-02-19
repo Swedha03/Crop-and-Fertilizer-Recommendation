@@ -16,3 +16,6 @@ pip install -r requirements.txt
 
 4. Run the Django server:
 python manage.py runserver
+
+Note :
+Under templates folder nav.html give the link for google API
