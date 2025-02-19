@@ -1,0 +1,26 @@
+{% extends "nav.html" %}
+{% block content %}
+
+  
+{% load static %}
+<div id="about" class="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
+                <div class="about_box">
+                    <h2>Suggestion of crops and fertilizers  based on type of land <br><strong class="black"> Farm and company</strong></h2>
+                    <p>Crop cultivation involves growing plants for food, fiber, or other commercial purposes. It includes practices like planting, watering, fertilizing, and managing pests.
+                        Different crops have specific requirements based on factors like soil type, climate, and sunlight.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
+                <div class="about_img">
+                    <figure><img src="{% static 'images/about.png' %}" alt="img" /></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

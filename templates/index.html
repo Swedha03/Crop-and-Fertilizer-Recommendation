@@ -1,0 +1,152 @@
+{% extends "nav.html" %}
+{% block content %}
+
+  
+{% load static %}
+
+    <section class="slider_section">
+        <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide" src="{% static 'images/banner.jpg' %}" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption relative">
+                            <h1>AGR</h1>
+                            <span>FARMING COMPANY</span>
+
+                            <p>Established in July 2024, this company specializes in bio-fertilizers, bio-control agents, bio-pesticides, and bio-insecticides. 
+                                Their team includes experts in microbial technology, biotechnology, and plant-microbe interactions. </p>
+                            <a class="buynow" href="#about">About us</a><a class="buynow ggg" href="#">Get a quote</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide" src="{% static 'images/banner.jpg' %}" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption relative">
+                            <h1>AGR</h1>
+                            <span>Furnishes</span>
+
+                            <p>The company provides a range of products and services such as crop care solutions, irrigation systems, tractors, farm machinery, and financial services to support the needs of farmers. 
+                                It also offers contract farming services to help farmers with production planning, crop selection, and marketing support. </p>
+                            <a class="buynow" href="#about">About us</a><a class="buynow ggg" href="#">Get a quote</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="{% static 'images/banner.jpg' %}" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption relative">
+                            <h1>Crop & Fertilizer <span>RECOMMENDATION</span></h1>
+                            
+
+                            <p>Crop-specific nutrient needs for Minnesota, covering guidelines for nitrogen, phosphate, potash, and other fertilizers.
+                             For real-time weather, temperature, humidity, atmospheric pressure, and other environmental data, this module makes use of 
+third-party applications. </p>
+                            <a class="buynow" href="#about">About us</a><a class="buynow ggg" href="#">Get a quote</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <i class='fa fa-angle-left'></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <i class='fa fa-angle-right'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- about -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
+                    <div class="about_box">
+                        <h2>Suggestion of crops and fertilizers  based on type of land <br><strong class="black"> Farm and company</strong></h2>
+                        <p>Crop cultivation involves growing plants for food, fiber, or other commercial purposes. It includes practices like planting, watering, fertilizing, and managing pests.
+                            Different crops have specific requirements based on factors like soil type, climate, and sunlight.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
+                    <div class="about_img">
+                        <figure><img src="{% static 'images/about.png' %}" alt="img" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- for_box -->
+     <!-- contact -->
+
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h2>Sign <strong class="black"> Up</strong></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padddd">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 padddd">
+        <div class="map_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                        <form class="main_form">
+                            <div class="row">
+
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Name" type="text" name="Name">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Email" type="text" name="Email">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Phone" type="text" name="Phone">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <button class="send">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- contact -->
+
+
+
+{% include "footer.html" %}
+{% endblock %}
+  
+   
+    <!-- end contact -->
+
+  
+   

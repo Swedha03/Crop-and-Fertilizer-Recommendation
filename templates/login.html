@@ -1,0 +1,58 @@
+<!-- contact -->
+{% extends "nav.html" %}
+{% block content %}
+
+  
+{% load static %}
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h2 style="justify-content:center;">Log <strong class="black">In </strong></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padddd">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 padddd">
+        <div class="map_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                        <form class="main_form" method="post" style="justify-content: center;">
+                            {% csrf_token %}
+                            
+                            <div class="row">
+
+                                
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Username" type="text" name="uname">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Password" type="password" name="pass" id="pass">
+                                </div>
+
+                                
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <button class="send" style="align-items: center;">Login</button>
+                                </div>  
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% for i in messages %}
+<script>alert("{{i}}")</script>
+{% endfor %}
+
+{% endblock %}

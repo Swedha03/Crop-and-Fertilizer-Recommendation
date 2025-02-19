@@ -1,0 +1,81 @@
+<!-- contact -->
+{% extends "nav.html" %}
+{% block content %}
+
+  
+{% load static %}
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h2>Enter <strong class="black">Details </strong></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padddd">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 padddd">
+        <div class="map_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                        <form class="main_form" method="post">
+                            {% csrf_token %}
+                            
+                            <div class="row">
+
+                                
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Nitrogen :{{Nitro}}" type="number" name="Nitro">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Phosphorous :{{Phos}}" type="number" name="Phos" id="Phos">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Potassium :{{Potas}}" type="number" name="Potas" id="Potas">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Temperature:{{Temp}}" type="number" step="any" min="0" max="50"name="Temp" id="Temp">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Humidity:{{Hum}}" type="number" step="any" min="0" max="100" name="Hum" id="Hum">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Moisture:{{Mois}}" type="number" step="any" min="0" max="10" name="Mois" id="Mois">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Soil type:{{Soil}}" type="text"  name="Soil" id="Soil">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Crop type:{{Crop}}" type="text"  name="Crop" id="Crop">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Prediction:{{prediction}}">
+                                </div>
+
+
+
+                                
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <button class="send" style="align-items: center;">Submit</button>
+                                </div>  
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% for i in messages %}
+<script>alert("{{i}}")</script>
+{% endfor %}
+
+{% endblock %}
